@@ -11,7 +11,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-[#0e1116] text-white">
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -29,7 +29,7 @@ const Footer = () => {
             </div>
 
             <p className="text-gray-300 mb-6 leading-relaxed max-w-md">
-              Crafting traditional iron cookware with passion and precision for over 25 years.
+              Crafting traditional iron cookware with passion and precision for over 5 years.
               Bringing authentic flavors and heritage cooking methods to modern kitchens across India.
             </p>
 
@@ -46,9 +46,12 @@ const Footer = () => {
                 </svg>
               </a>
 
+              {/* Instagram */}
               <a href="#" className="w-10 h-10 bg-gray-800 hover:bg-orange-600 rounded-full flex items-center justify-center transition-colors duration-200">
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.89 2.75.097.118.112.222.085.343-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.746-1.378l-.743 2.83c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.624 0 11.99-5.367 11.99-11.99C24.007 5.367 18.641.001 12.017.001z" />
+                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7z" />
+                  <path d="M12 7a5 5 0 110 10 5 5 0 010-10zm0 2.2a2.8 2.8 0 100 5.6 2.8 2.8 0 000-5.6z" />
+                  <circle cx="17.5" cy="6.5" r="1.2" />
                 </svg>
               </a>
 
@@ -119,9 +122,9 @@ const Footer = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
                 <div>
-                  <p className="text-gray-300 text-sm">
-                    Industrial Area, Phase-2<br />
-                    Chennai, Tamil Nadu 600001
+                  <p className="text-gray-300 text-sm break-words text-pretty">
+                    D. No. 1/448, Mudalaipatty,<br />
+                    Salem Bypass Road, Namakkal – 637 003
                   </p>
                 </div>
               </div>
@@ -154,9 +157,22 @@ const Footer = () => {
       {/* Bottom Footer */}
       <div className="border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="text-gray-400 text-sm">
-              © 2024 Surya Kitchens. All rights reserved.
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <div className="text-gray-400 text-sm flex items-center flex-wrap gap-x-2 gap-y-2">
+              <span>© 2025 Surya Kitchens. All rights reserved.</span>
+              <span>•</span>
+              <span>
+                Built by
+                {' '}
+                <a
+                  href="https://desinghrajan.in"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline decoration-dotted underline-offset-4 hover:text-orange-400 transition-colors duration-200"
+                >
+                  desingh
+                </a>
+              </span>
             </div>
 
             <div className="flex space-x-6 text-sm">
@@ -170,18 +186,6 @@ const Footer = () => {
                 Cookie Policy
               </a>
             </div>
-          </div>
-          {/* Builder credit */}
-          <div className="mt-4 text-center md:text-right text-gray-400 text-sm">
-            Built by{' '}
-            <a
-              href="https://desinghrajan.in"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline decoration-dotted underline-offset-4 hover:text-orange-400 transition-colors duration-200"
-            >
-              desingh
-            </a>
           </div>
         </div>
       </div>

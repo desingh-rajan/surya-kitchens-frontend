@@ -26,14 +26,14 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gray-50 scroll-mt-24">
+    <section id="contact" className="py-20 bg-[radial-gradient(circle_at_20%_10%,rgba(0,0,0,0.04),transparent_55%),radial-gradient(circle_at_80%_90%,rgba(0,0,0,0.04),transparent_55%)] from-white to-slate-100 bg-gradient-to-b scroll-mt-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Get In <span className="text-orange-600">Touch</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-white drop-shadow mb-6">
+            Get In <span className="text-orange-500">Touch</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-white/90 drop-shadow max-w-3xl mx-auto">
             Ready to bring traditional iron cookware to your kitchen? Contact us for custom orders,
             wholesale inquiries, or any questions about our products.
           </p>
@@ -41,7 +41,7 @@ const ContactSection = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Contact Form */}
-          <div className="bg-white rounded-3xl shadow-xl p-8">
+          <div className="bg-white border border-orange-100/60 rounded-3xl shadow-md p-8">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h3>
 
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -122,7 +122,7 @@ const ContactSection = () => {
           {/* Contact Information */}
           <div className="space-y-8">
             {/* Business Info */}
-            <div className="bg-white rounded-3xl shadow-xl p-8">
+            <div className="bg-white border border-orange-100/60 rounded-3xl shadow-md p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Contact Information</h3>
 
               <div className="space-y-6">
@@ -136,9 +136,8 @@ const ContactSection = () => {
                   <div>
                     <h4 className="text-lg font-semibold text-gray-900 mb-1">Address</h4>
                     <p className="text-gray-600">
-                      Surya Kitchens Manufacturing Unit<br />
-                      Industrial Area, Phase-2<br />
-                      Chennai, Tamil Nadu 600001
+                      D. No. 1/448, Mudalaipatty,<br />
+                      Salem Bypass Road, Namakkal – 637 003
                     </p>
                   </div>
                 </div>
@@ -152,8 +151,8 @@ const ContactSection = () => {
                   <div>
                     <h4 className="text-lg font-semibold text-gray-900 mb-1">Phone</h4>
                     <p className="text-gray-600">
-                      +91 98765 43210<br />
-                      +91 87654 32109
+                      +91 98431 87513<br />
+                      +91 77087 61079
                     </p>
                   </div>
                 </div>
@@ -190,7 +189,7 @@ const ContactSection = () => {
             </div>
 
             {/* Social Media */}
-            <div className="bg-white rounded-3xl shadow-xl p-8">
+            <div className="bg-white border border-orange-100/60 rounded-3xl shadow-md p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Follow Us</h3>
 
               <div className="flex space-x-4">
@@ -207,8 +206,10 @@ const ContactSection = () => {
                 </a>
 
                 <a href="#" className="w-12 h-12 bg-pink-600 text-white rounded-full flex items-center justify-center hover:bg-pink-700 transition-colors duration-200">
-                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.89 2.75.097.118.112.222.085.343-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.746-1.378l-.743 2.83c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.624 0 11.99-5.367 11.99-11.99C24.007 5.367 18.641.001 12.017.001z" />
+                  <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7z" />
+                    <path d="M12 7a5 5 0 110 10 5 5 0 010-10zm0 2.2a2.8 2.8 0 100 5.6 2.8 2.8 0 000-5.6z" />
+                    <circle cx="17.5" cy="6.5" r="1.2" />
                   </svg>
                 </a>
 

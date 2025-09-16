@@ -60,16 +60,16 @@ const HeroSection = () => {
             {/* Features */}
             <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-12">
               <div className="text-center lg:text-left">
-                <div className="text-3xl font-bold text-orange-600">100%</div>
-                <div className="text-gray-600 text-sm">Handcrafted</div>
+                <div className="text-3xl font-bold text-orange-400 drop-shadow">100%</div>
+                <div className="text-white/90 text-sm drop-shadow">Handcrafted</div>
               </div>
               <div className="text-center lg:text-left">
-                <div className="text-3xl font-bold text-orange-600">25+</div>
-                <div className="text-gray-600 text-sm">Years Experience</div>
+                <div className="text-3xl font-bold text-orange-400 drop-shadow">5+</div>
+                <div className="text-white/90 text-sm drop-shadow">Years of Craftsmanship</div>
               </div>
               <div className="text-center lg:text-left col-span-2 md:col-span-1">
-                <div className="text-3xl font-bold text-orange-600">5000+</div>
-                <div className="text-gray-600 text-sm">Happy Customers</div>
+                <div className="text-3xl font-bold text-orange-400 drop-shadow">5000+</div>
+                <div className="text-white/90 text-sm drop-shadow">Happy Customers</div>
               </div>
             </div>
           </div>
@@ -77,8 +77,8 @@ const HeroSection = () => {
           {/* Right Image */}
           <div className="relative flex justify-center lg:justify-end">
             <div className="relative z-10 w-full max-w-[520px]">
-              <div className="bg-white p-5 md:p-6 lg:p-8 rounded-3xl shadow-xl">
-                <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl">
+              <div className="bg-white/10 backdrop-blur-xl border border-white/20 p-4 md:p-5 lg:p-6 rounded-3xl shadow-[0_10px_30px_rgba(0,0,0,0.25)]">
+                <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl ring-1 ring-white/30">
                   <Image
                     src="/images/hero-card.jpg"
                     alt="Cast iron mushrooms cooking"
@@ -95,20 +95,7 @@ const HeroSection = () => {
             <div className="absolute -top-6 -right-6 w-20 h-20 md:w-24 md:h-24 bg-orange-200 rounded-full opacity-60"></div>
             <div className="absolute -bottom-6 -left-6 w-24 h-24 md:w-32 md:h-32 bg-amber-200 rounded-full opacity-40"></div>
 
-            {/* Floating Cards */}
-            <div className="absolute top-4 -left-4 bg-white p-3 rounded-xl shadow-md hidden lg:block">
-              <div className="flex items-center gap-3">
-                <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                <span className="text-sm font-medium">100% Natural</span>
-              </div>
-            </div>
-
-            <div className="absolute bottom-4 -right-4 bg-white p-3 rounded-xl shadow-md hidden lg:block">
-              <div className="flex items-center gap-3">
-                <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
-                <span className="text-sm font-medium">Lifetime Durability</span>
-              </div>
-            </div>
+            {/* Floating Cards removed for a cleaner look */}
           </div>
         </div>
       </div>

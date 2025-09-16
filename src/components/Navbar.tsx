@@ -22,7 +22,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/10 backdrop-blur-xl supports-[backdrop-filter]:bg-white/10 border-b border-white/20">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-black/25 backdrop-blur-xl supports-[backdrop-filter]:bg-black/25 border-b border-white/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 md:h-20 py-2">
           {/* Logo */}
@@ -42,7 +42,7 @@ const Navbar = () => {
                 priority
               />
             </div>
-            <span className="text-xl md:text-2xl font-extrabold tracking-tight text-gray-900 drop-shadow-sm">
+            <span className="text-xl md:text-2xl font-extrabold tracking-tight text-white drop-shadow">
               Surya Kitchens
             </span>
           </div>
@@ -54,7 +54,7 @@ const Navbar = () => {
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className="text-gray-800 hover:text-orange-600 px-3 py-2 text-sm font-medium transition-colors duration-200 cursor-pointer"
+                  className="text-white drop-shadow hover:text-orange-300 px-3 py-2 text-sm font-medium transition-colors duration-200 cursor-pointer"
                 >
                   {item.name}
                 </button>
@@ -94,7 +94,7 @@ const Navbar = () => {
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="text-gray-800 hover:text-orange-600 block px-3 py-3 text-base font-medium w-full text-left transition-colors duration-200"
+                className="text-gray-900 hover:text-orange-600 block px-3 py-3 text-base font-medium w-full text-left transition-colors duration-200"
               >
                 {item.name}
               </button>

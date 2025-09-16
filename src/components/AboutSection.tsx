@@ -84,7 +84,7 @@ const AboutSection = () => {
 
             {/* Overlay Image */}
             <div className="absolute -bottom-6 -left-6 z-20">
-              <div className="bg-white p-3 rounded-2xl shadow-lg">
+              <div className="bg-white/10 backdrop-blur-xl border border-white/20 p-3 rounded-2xl shadow-lg">
                 <Image
                   src="/images/about-overlay.jpg"
                   alt="Artisan at Work"
@@ -100,10 +100,10 @@ const AboutSection = () => {
             <div className="absolute top-1/2 -right-4 w-16 h-16 md:w-20 md:h-20 bg-amber-200 rounded-full opacity-40"></div>
 
             {/* Stats Card */}
-            <div className="absolute top-6 -left-6 bg-white p-5 rounded-xl shadow-md z-20">
+            <div className="absolute top-6 -left-6 bg-white/10 backdrop-blur-xl border border-white/20 p-5 rounded-xl shadow-md z-20">
               <div className="text-center">
-                <div className="text-3xl font-bold text-orange-600">25+</div>
-                <div className="text-sm text-gray-600">Years of Excellence</div>
+                <div className="text-3xl font-bold text-orange-400 drop-shadow">5+</div>
+                <div className="text-sm text-white/90 drop-shadow">Years of Excellence</div>
               </div>
             </div>
           </div>
@@ -120,8 +120,8 @@ const AboutSection = () => {
             <div className="text-gray-600">Product Varieties</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-orange-600 mb-2">25+</div>
-            <div className="text-gray-600">Years Experience</div>
+            <div className="text-4xl font-bold text-orange-600 mb-2">5+</div>
+            <div className="text-gray-600">Years of Craftsmanship</div>
           </div>
           <div className="text-center">
             <div className="text-4xl font-bold text-orange-600 mb-2">100%</div>
