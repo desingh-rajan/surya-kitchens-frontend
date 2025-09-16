@@ -68,7 +68,7 @@ const HeroSection = () => {
                 <div className="text-white/90 text-sm drop-shadow">Years of Craftsmanship</div>
               </div>
               <div className="text-center lg:text-left col-span-2 md:col-span-1">
-                <div className="text-3xl font-bold text-orange-400 drop-shadow">5000+</div>
+                <div className="text-3xl font-bold text-orange-400 drop-shadow">50+</div>
                 <div className="text-white/90 text-sm drop-shadow">Happy Customers</div>
               </div>
             </div>

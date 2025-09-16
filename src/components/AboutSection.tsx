@@ -112,7 +112,7 @@ const AboutSection = () => {
         {/* Stats Section */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 pt-16 border-t border-gray-100">
           <div className="text-center">
-            <div className="text-4xl font-bold text-orange-600 mb-2">5000+</div>
+            <div className="text-4xl font-bold text-orange-600 mb-2">50+</div>
             <div className="text-gray-600">Happy Customers</div>
           </div>
           <div className="text-center">
