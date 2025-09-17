@@ -30,10 +30,10 @@ const ContactSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white drop-shadow mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
             Get In <span className="text-orange-500">Touch</span>
           </h2>
-          <p className="text-xl text-white/90 drop-shadow max-w-3xl mx-auto">
+          <p className="text-xl text-gray-700 dark:text-white/90 max-w-3xl mx-auto">
             Ready to bring traditional iron cookware to your kitchen? Contact us for custom orders,
             wholesale inquiries, or any questions about our products.
           </p>
