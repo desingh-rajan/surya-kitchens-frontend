@@ -1,11 +1,8 @@
 # Kamal deployment configuration for Surya's Cookware
-
 service: suryas-cookware
-
-# Docker image configuration
 image: desinghrajan/suryas-cookware
 
-# Servers configuration
+# Servers
 servers:
   web:
     hosts:
@@ -13,49 +10,34 @@ servers:
     labels:
       traefik.http.routers.suryas-cookware.rule: Host(`suryascookware.com`) || Host(`www.suryascookware.com`)
       traefik.http.routers.suryas-cookware.entrypoints: websecure
+      traefik.http.routers.suryas-cookware.tls: true
       traefik.http.routers.suryas-cookware.tls.certresolver: letsencrypt
-    options:
-      network: "private"
 
-# Docker registry
+# Registry
 registry:
-  server: docker.io
   username: desinghrajan
+  password:
+    - KAMAL_REGISTRY_PASSWORD
 
-# Environment variables
+# Proxy
+proxy:
+  ssl: true
+  host: suryascookware.com
+  app_port: 3000
+  healthcheck:
+    path: /
+    timeout: 60
+    interval: 10
+
+# Environment
 env:
   clear:
     NODE_ENV: production
-    PORT: 3000
-    HOSTNAME: "0.0.0.0"
 
-# Traefik configuration - SHARED across all apps on the server
-# Only deploy if not already running (won't conflict with other apps)
-traefik:
-  host_port: 80
-  options:
-    publish:
-      - "443:443"
-      - "80:80"
-    volume:
-      - "/letsencrypt:/letsencrypt"
-    network: "private"
-  args:
-    entryPoints.web.address: ":80"
-    entryPoints.websecure.address: ":443"
-    entryPoints.web.http.redirections.entryPoint.to: websecure
-    entryPoints.web.http.redirections.entryPoint.scheme: https
-    certificatesResolvers.letsencrypt.acme.email: "info@suryascookware.com"
-    certificatesResolvers.letsencrypt.acme.storage: "/letsencrypt/acme.json"
-    certificatesResolvers.letsencrypt.acme.httpchallenge: true
-    certificatesResolvers.letsencrypt.acme.httpchallenge.entrypoint: web
+# SSH
+ssh:
+  user: root
 
-# Health check
-healthcheck:
-  path: /
-  port: 3000
-  max_attempts: 7
-  interval: 20s
-
-# Ensure we use the same network as other apps for Traefik routing
-network: "private"
+# Builder
+builder:
+  arch: amd64
