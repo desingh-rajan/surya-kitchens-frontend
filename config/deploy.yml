@@ -1,0 +1,52 @@
+# Kamal deployment configuration for Surya's Cookware
+
+service: suryas-cookware
+
+# Docker image configuration
+image: desinghrajan/suryas-cookware
+
+# Servers configuration
+servers:
+  web:
+    hosts:
+      - 139.84.156.199
+    labels:
+      traefik.http.routers.suryas-cookware.rule: Host(`suryascookware.com`) || Host(`www.suryascookware.com`)
+      traefik.http.routers.suryas-cookware.entrypoints: websecure
+      traefik.http.routers.suryas-cookware.tls.certresolver: letsencrypt
+
+# Docker registry (you'll need to set KAMAL_REGISTRY_PASSWORD in .env)
+registry:
+  server: docker.io
+  username: desinghrajan
+
+# Environment variables
+env:
+  clear:
+    NODE_ENV: production
+    PORT: 3000
+
+# Traefik configuration for SSL
+traefik:
+  options:
+    publish:
+      - "443:443"
+      - "80:80"
+    volume:
+      - "/letsencrypt:/letsencrypt"
+  args:
+    entryPoints.web.address: ":80"
+    entryPoints.websecure.address: ":443"
+    entryPoints.web.http.redirections.entryPoint.to: websecure
+    entryPoints.web.http.redirections.entryPoint.scheme: https
+    certificatesResolvers.letsencrypt.acme.email: "info@suryascookware.com"
+    certificatesResolvers.letsencrypt.acme.storage: "/letsencrypt/acme.json"
+    certificatesResolvers.letsencrypt.acme.httpchallenge: true
+    certificatesResolvers.letsencrypt.acme.httpchallenge.entrypoint: web
+
+# Health check
+healthcheck:
+  path: /
+  port: 3000
+  max_attempts: 7
+  interval: 20s
