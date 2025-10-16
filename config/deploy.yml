@@ -14,8 +14,10 @@ servers:
       traefik.http.routers.suryas-cookware.rule: Host(`suryascookware.com`) || Host(`www.suryascookware.com`)
       traefik.http.routers.suryas-cookware.entrypoints: websecure
       traefik.http.routers.suryas-cookware.tls.certresolver: letsencrypt
+    options:
+      network: "private"
 
-# Docker registry (you'll need to set KAMAL_REGISTRY_PASSWORD in .env)
+# Docker registry
 registry:
   server: docker.io
   username: desinghrajan
@@ -25,15 +27,19 @@ env:
   clear:
     NODE_ENV: production
     PORT: 3000
+    HOSTNAME: "0.0.0.0"
 
-# Traefik configuration for SSL
+# Traefik configuration - SHARED across all apps on the server
+# Only deploy if not already running (won't conflict with other apps)
 traefik:
+  host_port: 80
   options:
     publish:
       - "443:443"
       - "80:80"
     volume:
       - "/letsencrypt:/letsencrypt"
+    network: "private"
   args:
     entryPoints.web.address: ":80"
     entryPoints.websecure.address: ":443"
@@ -50,3 +56,6 @@ healthcheck:
   port: 3000
   max_attempts: 7
   interval: 20s
+
+# Ensure we use the same network as other apps for Traefik routing
+network: "private"
