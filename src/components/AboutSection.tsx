@@ -15,7 +15,7 @@ const AboutSection = () => {
             </h2>
 
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              At Surya Kitchens, we believe that the best flavors come from the heart of tradition.
+              At Surya&apos;s Cookware, we believe that the best flavors come from the heart of tradition.
               For over two decades, our family has been dedicated to preserving the ancient art of
               iron cookware crafting, bringing you authentic pieces that connect you to the roots
               of Indian cooking.

@@ -61,10 +61,10 @@ const ProductsSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-white drop-shadow mb-6">
             Our <span className="text-orange-600">Premium</span> Collection
           </h2>
-          <p className="text-xl text-gray-700 dark:text-white/90 max-w-3xl mx-auto">
+          <p className="text-xl text-white/90 drop-shadow max-w-3xl mx-auto">
             Discover our handcrafted iron cookware collection, each piece carefully forged
             to bring authentic flavors and traditional cooking methods to your kitchen.
           </p>

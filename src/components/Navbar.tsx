@@ -27,23 +27,26 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16 md:h-20 py-2">
           {/* Logo */}
           <div
-            className="flex-shrink-0 flex items-center gap-3 cursor-pointer select-none"
+            className="flex-shrink-0 flex items-center gap-3 cursor-pointer select-none group"
             onClick={() => scrollToSection('#home')}
             role="button"
             aria-label="Go to home"
           >
-            <div className="w-14 h-14 md:w-16 md:h-16 rounded-full overflow-hidden bg-white/80 ring-1 ring-white/40 backdrop-blur">
+            <div className="w-14 h-14 md:w-16 md:h-16 transition-transform duration-300 group-hover:scale-110">
               <Image
-                src="/surya-logo.jpeg"
-                alt="Surya Kitchens Logo"
+                src="/suryas-cookware-logo.png"
+                alt="Surya's Cookware Logo"
                 width={64}
                 height={64}
                 className="object-contain"
                 priority
               />
             </div>
-            <span className="text-xl md:text-2xl font-extrabold tracking-tight text-white drop-shadow">
-              Surya Kitchens
+            <span className="text-xl md:text-2xl font-extrabold tracking-wide uppercase text-transparent bg-clip-text bg-gradient-to-b from-yellow-200 via-amber-400 to-yellow-600" style={{
+              textShadow: '0 0 10px rgba(251, 191, 36, 0.3), 0 2px 3px rgba(0, 0, 0, 0.3)',
+              filter: 'drop-shadow(0 0 5px rgba(251, 191, 36, 0.2))'
+            }}>
+              Surya&apos;s Cookware
             </span>
           </div>
 

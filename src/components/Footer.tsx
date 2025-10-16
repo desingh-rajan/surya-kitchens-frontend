@@ -17,15 +17,17 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <div className="flex items-center mb-6">
-              <Image
-                src="/surya-logo.jpeg"
-                alt="Surya Kitchens Logo"
-                width={40}
-                height={40}
-                className="rounded-full"
-              />
-              <span className="ml-3 text-2xl font-bold">Surya Kitchens</span>
+            <div className="flex items-center mb-6 group cursor-pointer">
+              <div className="transition-transform duration-300 group-hover:scale-110">
+                <Image
+                  src="/suryas-cookware-logo.png"
+                  alt="Surya's Cookware Logo"
+                  width={40}
+                  height={40}
+                  className="rounded-full"
+                />
+              </div>
+              <span className="ml-3 text-2xl font-bold">Surya&apos;s Cookware</span>
             </div>
 
             <p className="text-gray-300 mb-6 leading-relaxed max-w-md">
@@ -140,7 +142,7 @@ const Footer = () => {
                 <svg className="w-5 h-5 text-orange-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                <p className="text-gray-300 text-sm">info@suryakitchens.com</p>
+                <p className="text-gray-300 text-sm">info@suryascookware.com</p>
               </div>
 
               <div className="flex items-center space-x-3">
@@ -159,7 +161,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-gray-400 text-sm flex items-center flex-wrap gap-x-2 gap-y-2">
-              <span>© 2025 Surya Kitchens. All rights reserved.</span>
+              <span>© 2025 Surya&apos;s Cookware. All rights reserved.</span>
               <span>•</span>
               <span>
                 Built by

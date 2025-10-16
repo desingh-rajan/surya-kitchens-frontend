@@ -13,20 +13,20 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Surya Kitchens — Traditional Iron Cookware",
+  title: "Surya's Cookware — Traditional Iron Cookware",
   description: "Handcrafted iron cookware forged with tradition. Dosa pans, tawas, kadhais, woks and more.",
   icons: {
-    icon: "/surya-logo.jpeg",
-    shortcut: "/surya-logo.jpeg",
-    apple: "/surya-logo.jpeg",
+    icon: "/suryas-cookware-logo.png",
+    shortcut: "/suryas-cookware-logo.png",
+    apple: "/suryas-cookware-logo.png",
   },
   openGraph: {
-    title: "Surya Kitchens — Traditional Iron Cookware",
+    title: "Surya's Cookware — Traditional Iron Cookware",
     description: "Handcrafted iron cookware forged with tradition.",
-    url: "https://example.com",
-    siteName: "Surya Kitchens",
+    url: "https://suryascookware.com",
+    siteName: "Surya's Cookware",
     images: [
-      { url: "/images/hero-bg.jpg", width: 1200, height: 630, alt: "Surya Kitchens" },
+      { url: "/images/hero-bg.jpg", width: 1200, height: 630, alt: "Surya's Cookware" },
     ],
     locale: "en_IN",
     type: "website",

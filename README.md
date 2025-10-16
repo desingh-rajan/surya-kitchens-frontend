@@ -1,4 +1,4 @@
-# Surya Kitchens - Premium Iron Cookware Landing Page
+# Surya's Cookware - Premium Iron Cookware Landing Page
 
 A modern, responsive landing page showcasing traditional iron cookware products crafted with passion and precision.
 
@@ -54,10 +54,10 @@ A modern, responsive landing page showcasing traditional iron cookware products 
 
 ## 📞 Business Information
 
-- **Company**: Surya Kitchens Manufacturing Unit
-- **Location**: Industrial Area, Phase-2, Chennai, Tamil Nadu
-- **Phone**: +91 98765 43210
-- **Email**: <info@suryakitchens.com>
+- **Company**: Surya's Cookware Manufacturing Unit
+- **Location**: D. No. 1/448, Mudalaipatty, Salem Bypass Road, Namakkal – 637 003
+- **Phone**: +91 98431 87513
+- **Email**: <info@suryascookware.com>
 
 ## 🚀 Deployment
 
@@ -76,4 +76,4 @@ This project is ready for deployment on Vercel:
 
 ---
 
-**Built with ❤️ for Surya Kitchens - Preserving Traditional Cooking Methods**
+**Built with ❤️ for Surya's Cookware - Preserving Traditional Cooking Methods**
