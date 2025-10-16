@@ -22,7 +22,7 @@ registry:
 # Proxy
 proxy:
   ssl: true
-  host: suryascookware.com
+  host: suryascookware.com,www.suryascookware.com
   app_port: 3000
   healthcheck:
     path: /
