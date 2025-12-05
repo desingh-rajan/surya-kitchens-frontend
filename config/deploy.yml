@@ -38,6 +38,9 @@ env:
 ssh:
   user: root
 
+# Keep only 2 versions (current + 1 for rollback)
+retain_containers: 2
+
 # Builder
 builder:
   arch: amd64
