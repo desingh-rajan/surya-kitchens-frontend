@@ -40,11 +40,13 @@ Wait for DNS propagation (can take up to 48 hours, usually 15-30 minutes).
 ### 3. Configure Kamal
 
 1. Copy environment file:
+
    ```bash
    cp .env.example .env
    ```
 
 2. Edit `.env` and add your Docker Hub token:
+
    ```bash
    KAMAL_REGISTRY_PASSWORD=your_docker_hub_token_here
    ```
@@ -54,11 +56,13 @@ Wait for DNS propagation (can take up to 48 hours, usually 15-30 minutes).
 ### 4. Server Preparation
 
 SSH into your server:
+
 ```bash
 ssh root@139.84.156.199
 ```
 
 Update system and install Docker:
+
 ```bash
 apt update && apt upgrade -y
 apt install docker.io docker-compose -y
@@ -81,6 +85,7 @@ kamal deploy
 ### 6. SSL Certificate
 
 Kamal will automatically:
+
 - Set up Traefik as reverse proxy
 - Obtain Let's Encrypt SSL certificate
 - Configure automatic HTTPS redirect
@@ -88,8 +93,9 @@ Kamal will automatically:
 ### 7. Verify Deployment
 
 Check your site:
-- https://suryascookware.com
-- https://www.suryascookware.com
+
+- <https://suryascookware.com>
+- <https://www.suryascookware.com>
 
 ### Useful Kamal Commands
 
@@ -116,6 +122,7 @@ kamal remove
 ## Troubleshooting
 
 ### DNS not resolving
+
 ```bash
 # Check DNS propagation
 dig suryascookware.com
@@ -123,6 +130,7 @@ nslookup suryascookware.com
 ```
 
 ### Docker build fails
+
 ```bash
 # Test local build
 docker build -t suryas-cookware .
@@ -130,6 +138,7 @@ docker run -p 3000:3000 suryas-cookware
 ```
 
 ### Can't connect to server
+
 ```bash
 # Test SSH connection
 ssh root@139.84.156.199
@@ -139,6 +148,7 @@ systemctl status docker
 ```
 
 ### SSL certificate issues
+
 ```bash
 # Check Traefik logs
 kamal traefik logs
@@ -167,5 +177,6 @@ kamal traefik logs
 ## Support
 
 For issues or questions:
-- Email: info@suryascookware.com
+
+- Email: <info@suryascookware.com>
 - Developer: desinghrajan.in

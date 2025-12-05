@@ -39,3 +39,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# IDE
+.vscode/
+.idea/
+
+# Kamal secrets
+.kamal/secrets
+
+# Client assets (raw files from client)
+client-assets/

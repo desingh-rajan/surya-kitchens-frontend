@@ -16,9 +16,9 @@ export const metadata: Metadata = {
   title: "Surya's Cookware — Traditional Iron Cookware",
   description: "Handcrafted iron cookware forged with tradition. Dosa pans, tawas, kadhais, woks and more.",
   icons: {
-    icon: "/suryas-cookware-logo.png",
-    shortcut: "/suryas-cookware-logo.png",
-    apple: "/suryas-cookware-logo.png",
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
   },
   openGraph: {
     title: "Surya's Cookware — Traditional Iron Cookware",
